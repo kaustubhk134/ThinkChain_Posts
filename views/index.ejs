@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<!-- Include this in your HTML <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<body>
+    <!-- <h1>TalkSphere Post's</h1> -->
+    <h1>🧠 ThinkChain Post's</h1>
+    <% for (post of posts) { %>
+        <div class="posts">
+            <h3 class="user">@<%= post.username %></h3>
+            <h4 class="content"> <%= post.content %></h4>
+            <br>
+            <a href="http://localhost:3000/posts/<%=post.id%>" style="margin-right: 15px;">See in Detail</a>
+            <a href="http://localhost:3000/posts/<%=post.id%>/edit">Edit</a>
+            <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                <button>Delete Post</button>
+            </form>
+        </div>
+    <% } %>
+    <br>
+    <br>
+    <a href="http://localhost:3000/posts/new">Create new post</a>
+</body>
+</html>

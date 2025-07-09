@@ -1,0 +1,25 @@
+h1{
+    /* color: maroon; */
+    /* color: #1E3A8A;
+    background-color: #E0F2FE; */
+    background-color: #FDECEC; /* light blue background */
+    color: maroon;            /* deep blue title */
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Bebas Neue', cursive;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+}
+
+.posts{
+    background-color: blanchedalmond;
+}
+
+.user{
+    font-style: italic;
+}
